@@ -1,6 +1,6 @@
 package adapter2;
 
-public class TranslatorAdapter2 implements JappaneseInterface{
+public class TranslatorAdapter2 extends VietnameseClient implements JappaneseInterface{
 
 	VietnameseClient VietnameseClient;
 	String message;
