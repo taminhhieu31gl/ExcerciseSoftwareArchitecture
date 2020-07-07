@@ -1,8 +1,6 @@
-package test;
+package demo;
 
 import java.util.List;
-
-import prototype.Employees;
 
 public class PrototypePatternTest {
 	public static void main(String[] args) throws CloneNotSupportedException {
