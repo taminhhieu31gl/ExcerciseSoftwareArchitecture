@@ -1,13 +1,18 @@
 package abstractfactory;
 
-import model.Ban;
-import model.Ghe;
-
 public class VatLieuFactory {
-	public static Ban getBan(VatLieuAbstractFactory factory) {
-		return factory.themBan();
+	
+	public VatLieuFactory() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-	public static Ghe getGhe(VatLieuAbstractFactory factory) {
-		return factory.themGhe();
+
+	public static VatLieuAbstractFactory getVatLieu(String type) {
+		if(type.equalsIgnoreCase("nhua")) {
+			return new NhuaFactory();
+		}else if(type.equalsIgnoreCase("go")) {
+			return new GoFactory();
+		}else return null;
+		
 	}
 }

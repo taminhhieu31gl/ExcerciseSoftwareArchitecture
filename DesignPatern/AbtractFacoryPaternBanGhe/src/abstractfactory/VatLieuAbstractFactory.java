@@ -3,7 +3,7 @@ package abstractfactory;
 import model.Ban;
 import model.Ghe;
 
-public interface VatLieuAbstractFactory {
-	public Ban themBan();
-	public Ghe themGhe();
+public abstract class VatLieuAbstractFactory {
+	public abstract Ban themBan();
+	public abstract Ghe themGhe();
 }

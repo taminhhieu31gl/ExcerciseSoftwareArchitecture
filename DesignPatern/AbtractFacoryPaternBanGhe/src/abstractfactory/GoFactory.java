@@ -1,20 +1,24 @@
 package abstractfactory;
 
 import model.Ban;
+import model.BanGo;
 import model.Ghe;
+import model.GheGo;
 
-public class GoFactory implements VatLieuAbstractFactory {
+public class GoFactory extends VatLieuAbstractFactory {
 
 	@Override
 	public Ban themBan() {
 		// TODO Auto-generated method stub
-		return new Ban("Ban go", 4);
+		return new BanGo();
 	}
 
 	@Override
 	public Ghe themGhe() {
 		// TODO Auto-generated method stub
-		return new Ghe("Ghe Go",5);
+		return new GheGo();
 	}
+
+
 	
 }

@@ -1,20 +1,24 @@
 package abstractfactory;
 
 import model.Ban;
+import model.BanNhua;
 import model.Ghe;
+import model.GheNhua;
 
-public class NhuaFactory implements VatLieuAbstractFactory{
+public class NhuaFactory extends VatLieuAbstractFactory{
 
 	@Override
 	public Ban themBan() {
 		// TODO Auto-generated method stub
-		return new Ban("ban nhua", 4);
+		return new BanNhua();
 	}
 
 	@Override
 	public Ghe themGhe() {
 		// TODO Auto-generated method stub
-		return new Ghe("ghe nhua", 4);
+		return new GheNhua();
 	}
+
+
 
 }
