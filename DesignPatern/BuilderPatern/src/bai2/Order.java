@@ -20,8 +20,8 @@ public class Order {
         return "Order [orderType=" + orderType + ", breadType=" + breadType + ", sauceType=" + sauceType
                 + ", vegetableType=" + vegetableType + "]";
     }
- 
-    public OrderType getOrderType() {
+
+	public OrderType getOrderType() {
         return orderType;
     }
  

@@ -2,6 +2,11 @@ package decorate;
 
 public class Sua extends AbstractDecorate{
 	
+	public Sua() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public Sua(MonChinh master) {
 		super(master);
 		// TODO Auto-generated constructor stub
